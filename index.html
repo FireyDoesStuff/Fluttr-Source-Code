@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fluttr</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<button class="mode-button" id="themeButton">Dark Mode</button>
+<div class="popup" id="resetPopup">
+      <p class="popup-text" id="blacktext">Are you sure?</p>
+      <div class="popup-buttons">
+        <button class="green-button" onclick="resetFleeks()">Yes</button>
+        <button class="red-button" onclick="hideResetPopup()">No</button>
+      </div>
+    </div>
+  <div class="container">
+        <center>
+    <div class="logo">
+      <img src="logo.png" alt="Twitter Clone Logo" id="logoimg">
+      <h3>Your digital to-do list.</h3>
+    </div>
+    <div class="tweet-box">
+      <textarea id="tweetInput" id="blacktext" placeholder="What's up? Is it a direction? I honestly forgot." rows="4" cols="50"></textarea>
+      <button class="tweet-btn" onclick="tweet()">Fleek</button>
+      <button class="reset-button" onclick="showResetPopup()">Reset Fleeks</button>
+    </div>
+             <div class="cookie-text">
+      <p style="font-size: 12px;">We use 🍪 cookies 🍪 to save everything you type. Will you give us some.... please?</p>
+    </div>
+    <div id="tweetList">
+      <!-- Saved tweets will be displayed here -->
+    </div>
+    <div class="discord-container">
+      <a class="discord-button" href="https://discord.com/invite/nzdfz7X4zF" style="padding: 18px 36px; font-size: 18px;">
+        Discord
+      </a>
+    </div>
+    </center>
+    </div>
+  <script src="cookies.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+</body>
+</html>
